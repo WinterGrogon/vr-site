@@ -1,0 +1,36 @@
+@import url(../font/Inter/stylesheet.css);
+
+*, *::before, *::after {
+    margin: 0;
+    padding: 0;
+    border: 0;
+    box-sizing: border-box; /* Устанавливает box-sizing для всех элементов */
+}
+
+html {
+    font-family: 'Inter';
+    font-size: 20px;
+}
+
+.container {
+    max-width: 1600px;
+    width: 100%;
+    margin: 0 auto;
+    padding: 50px 15px;
+}
+
+h1, h2 {
+    font-size: 4rem;
+    line-height: 70%;
+    font-weight: 900;
+}
+
+h3 {
+    font-size: 3rem;
+    font-weight: 900;
+}
+
+p, label {
+    font-size: 2rem;
+    font-weight: 300;
+}

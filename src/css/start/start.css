@@ -1,0 +1,53 @@
+.start {
+    margin-top: 140px;
+    text-align: center;
+}
+
+.start__title {
+    max-width: 1200px;
+    margin: 0 auto;
+    line-height: 100%;
+}
+
+.start__desc {
+    max-width: 770px;
+    margin: 120px auto;
+}
+
+.start__graphics {
+    position: relative;
+}
+
+.start__angular1, .start__angular2 {
+    width: 400px;
+    height: 400px;
+
+    border-radius: 50%;
+
+    position: absolute;
+    top: 0;
+    right: 0;
+}
+
+.start__angular1 {
+    background: conic-gradient(from 180deg at 50% 50%, #0DC5FF 0deg, #2B416B 360deg);
+}
+
+.start__angular2 {
+    background: conic-gradient(from 57.12deg at 50% 50%, #00FFD1 0deg, rgba(0, 255, 209, 0) 360deg);
+
+    animation: rotatiton 60s linear 0s infinite;
+}
+
+.start__img {
+    width: 100%;
+}
+
+@keyframes rotatiton {
+    0% {
+        transform: rotate(0deg)
+    }
+    100% {
+        transform: rotate(360deg)
+    }
+}

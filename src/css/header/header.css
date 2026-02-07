@@ -1,0 +1,112 @@
+.header {
+    width: 100%;
+    padding: 50px 70px;
+
+    background: var(--bg-color);
+    border-bottom: 1px solid var(--font-color1);
+
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 1000;
+
+    input#toggler {
+        display: none;
+        visibility: hidden;
+    }
+
+    input#toggler:checked~.rolled {
+        height: 0;
+        margin-top: 0;
+        transform: scaleY(0);
+        overflow: hidden;
+    }
+
+    input#toggler:checked~.menu .menu__btn-toggle::before {
+        transform: rotateZ(180deg) ;
+    }
+
+    .menu {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+
+        .logo {
+            height: 30px;
+
+            a, img {
+                height: 100%;
+            }
+        }
+    }
+
+    .menu__buttons {
+        display: flex;
+        align-items: center;
+        gap: 50px;
+    }
+
+    .menu__btn-toggle {
+        display: flex;
+        align-items: center;
+        gap: 10px;
+
+        font-size: 1rem;
+        cursor: pointer;
+
+        position: relative;
+
+        &::before {
+            content: "";
+            display: block;
+
+            width: 30px;
+            aspect-ratio: 1;
+
+            background: url(../../img/menu-open-arrow.svg) center / cover no-repeat;
+            
+            transition: transform .3s ease-in-out;
+        }
+    }
+
+    .rolled {
+        display: flex;
+        justify-content: space-around;
+        align-items: center;
+
+        height: calc(2rem + 30px);
+        margin-top: 30px;
+
+        transform-origin: top left;
+
+        transition: transform .3s ease-in-out, height .4s ease-in-out, margin-top .3s ease-in-out;
+    }
+
+    .rolled__item.item {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        row-gap: 10px;
+
+        text-decoration: none;
+        color: unset;
+
+        .item__text {
+            color: var(--font-color1);
+            font-size: 1rem;
+            font-weight: 900;
+        }
+        
+        .item__icon {
+            height: 28px;
+        }
+        
+        &:last-of-type .item__icon {
+            height: 27px;
+        }
+        
+        &:hover .item__text {
+            color: var(--accent-color);
+        }
+    }
+}
