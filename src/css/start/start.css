@@ -1,6 +1,8 @@
 .start {
     margin-top: 140px;
     text-align: center;
+
+    overflow: hidden;
 }
 
 .start__title {
