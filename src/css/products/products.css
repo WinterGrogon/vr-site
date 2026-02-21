@@ -37,16 +37,17 @@
     background: radial-gradient(100% 623.79% at 0% 4.85%, #16FFFF 0%, rgba(0, 0, 0, 0) 100%),
         url("img/product-2.png") center / cover no-repeat;
 
-        flex-wrap: wrap;
+    flex-wrap: wrap;
 
-        .item__title, .item__text {
-            margin-bottom: 0;
-            width: 70%;
-        }
+    .item__title,
+    .item__text {
+        margin-bottom: 0;
+        width: 70%;
+    }
 
-        .item__btn {
-            margin-top: auto;
-        }
+    .item__btn {
+        margin-top: auto;
+    }
 }
 
 .products__accessories {
@@ -59,4 +60,15 @@
     grid-area: m;
     background: radial-gradient(98.18% 144.48% at 100% 98.18%, #FF450B 0%, rgba(0, 0, 0, 0) 100%), radial-gradient(61.04% 79.24% at 2.5% 5.83%, #FF450B 0%, rgba(255, 11, 11, 0) 100%),
         url("img/product-4.png") center / cover no-repeat;
+}
+
+@media screen and (max-width: 764px) {
+    .products__content {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .products__item {
+        padding: 10px;
+    }
 }
