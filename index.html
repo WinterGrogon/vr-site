@@ -14,104 +14,108 @@
 </head>
 
 <body>
-    <header class="header">
-        <input type="checkbox" id="toggler" checked>
+    <div class="app">
+        <header class="header">
+            <input type="checkbox" id="toggler" checked>
 
-        <div class="menu">
-            <div class="logo">
-                <a href="#" class="logo__link">
-                    <img src="./src/img/site-logo.svg" alt="Logo" class="logo__src">
+            <div class="menu">
+                <div class="logo">
+                    <a href="#" class="logo__link">
+                        <img src="./src/img/site-logo.svg" alt="Logo" class="logo__src">
+                    </a>
+                </div>
+
+                <nav class="menu__buttons">
+                    <label for="toggler" class="menu__btn-toggle">Продукцыя</label>
+                    <a href="#!" class="menu__buy btn btn-primary">Укпить</a>
+                </nav>
+            </div>
+
+            <div class="rolled">
+                <a href="#!" class="rolled__item item">
+                    <img src="./src/img/menu-item1.svg" class="item__icon">
+                    <p class="item__text">VR Glasses Light</p>
+                </a>
+
+                <a href="#!" class="rolled__item item">
+                    <img src="./src/img/menu-item2.svg" class="item__icon">
+                    <p class="item__text">VR Glasses Pro</p>
+                </a>
+
+                <a href="#!" class="rolled__item item">
+                    <img src="./src/img/menu-item3.svg" class="item__icon">
+                    <p class="item__text">Аксессуары</p>
                 </a>
             </div>
+        </header>
 
-            <nav class="menu__buttons">
-                <label for="toggler" class="menu__btn-toggle">Продукцыя</label>
-                <a href="#!" class="menu__buy btn btn-primary">Укпить</a>
-            </nav>
-        </div>
+        <main class="main">
+            <section class="start">
+                <div class="container">
+                    <h1 class="start__title">VR Гарнитуры для дома и разработки</h1>
 
-        <div class="rolled">
-            <a href="#!" class="rolled__item item">
-                <img src="./src/img/menu-item1.svg" class="item__icon">
-                <p class="item__text">VR Glasses Light</p>
-            </a>
+                    <p class="start__desc">
+                        Соревнуйся с друзями, работай и разрабатывай в VR. Приобретай одну из двух гарнитур и уже завтра
+                        тебе ее доставят
+                    </p>
 
-            <a href="#!" class="rolled__item item">
-                <img src="./src/img/menu-item2.svg" class="item__icon">
-                <p class="item__text">VR Glasses Pro</p>
-            </a>
-
-            <a href="#!" class="rolled__item item">
-                <img src="./src/img/menu-item3.svg" class="item__icon">
-                <p class="item__text">Аксессуары</p>
-            </a>
-        </div>
-    </header>
-
-    <main class="main">
-        <section class="start">
-            <div class="container">
-                <h1 class="start__title">VR Гарнитуры для дома и разработки</h1>
-
-                <p class="start__desc">
-                    Соревнуйся с друзями, работай и разрабатывай в VR. Приобретай одну из двух гарнитур и уже завтра
-                    тебе ее доставят
-                </p>
-
-                <div class="start__graphics">
-                    <div class="start__angular1"></div>
-                    <div class="start__angular2"></div>
-                    <img src="./src/img/header-img.png" class="start__img">
+                    <div class="start__graphics">
+                        <div class="start__angular1"></div>
+                        <div class="start__angular2"></div>
+                        <img src="./src/img/header-img.png" class="start__img">
+                    </div>
                 </div>
-            </div>
-        </section>
+            </section>
 
-        <section class="products">
-            <div class="container">
-                <h2 class="products__title">Продукция</h2>
-                <hr>
+            <section class="products">
+                <div class="container">
+                    <h2 class="products__title">Продукция</h2>
+                    <hr>
 
-                <ul class="products__content">
-                    <li class="products__item item products__vrlight">
-                        <h3 class="item__title">VR Glasses Light</h3>
+                    <ul class="products__content">
+                        <li class="products__item item products__vrlight">
+                            <h3 class="item__title">VR Glasses Light</h3>
 
-                        <p class="item__text">
-                            Самые популярные очки. Сочетание легкости, комфорта и отличных характеристик. По доступной
-                            цене
-                        </p>
+                            <p class="item__text">
+                                Самые популярные очки. Сочетание легкости, комфорта и отличных характеристик. По
+                                доступной
+                                цене
+                            </p>
 
-                        <a href="#!" class="btn btn-primary item__btn">Подробнее</a>
-                    </li>
+                            <a href="#!" class="btn btn-primary item__btn">Подробнее</a>
+                        </li>
 
-                    <li class="products__item item products__vrpro">
-                        <h3 class="item__title">VR Glasses Pro</h3>
+                        <li class="products__item item products__vrpro">
+                            <h3 class="item__title">VR Glasses Pro</h3>
 
-                        <p class="item__text">
-                            Бескомпромиссная мощность и красота. Самые современные технологии для реализации ваших идей
-                        </p>
+                            <p class="item__text">
+                                Бескомпромиссная мощность и красота. Самые современные технологии для реализации ваших
+                                идей
+                            </p>
 
-                        <a href="#!" class="btn btn-primary item__btn">Подробнее</a>
-                    </li>
+                            <a href="#!" class="btn btn-primary item__btn">Подробнее</a>
+                        </li>
 
-                    <li class="products__item item products__accessories">
-                        <h3 class="item__title">Аксессуары</h3>
+                        <li class="products__item item products__accessories">
+                            <h3 class="item__title">Аксессуары</h3>
 
-                        <a href="#!" class="btn btn-primary item__btn">Подробнее</a>
-                    </li>
+                            <a href="#!" class="btn btn-primary item__btn">Подробнее</a>
+                        </li>
 
-                    <li class="products__item item products__market">
-                        <h3 class="item__title">VRSOFT Маркет</h3>
+                        <li class="products__item item products__market">
+                            <h3 class="item__title">VRSOFT Маркет</h3>
 
-                        <p class="item__text">
-                            Игры и приложения для ваших очков
-                        </p>
+                            <p class="item__text">
+                                Игры и приложения для ваших очков
+                            </p>
 
-                        <a href="#!" class="btn btn-primary item__btn">Подробнее</a>
-                    </li>
-                </ul>
-            </div>
-        </section>
-    </main>
+                            <a href="#!" class="btn btn-primary item__btn">Подробнее</a>
+                        </li>
+                    </ul>
+                </div>
+            </section>
+        </main>
+    </div>
 </body>
 
 </html>
