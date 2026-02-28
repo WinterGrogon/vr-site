@@ -23,7 +23,7 @@
     }
 
     input#toggler:checked~.menu .menu__btn-toggle::before {
-        transform: rotateZ(180deg) ;
+        transform: rotateZ(180deg);
     }
 
     .menu {
@@ -34,7 +34,8 @@
         .logo {
             height: 30px;
 
-            a, img {
+            a,
+            img {
                 height: 100%;
             }
         }
@@ -64,9 +65,13 @@
             aspect-ratio: 1;
 
             background: url(../../img/menu-open-arrow.svg) center / cover no-repeat;
-            
+
             transition: transform .3s ease-in-out;
         }
+    }
+
+    .menu__buy {
+        font-size: 1rem;
     }
 
     .rolled {
@@ -96,15 +101,15 @@
             font-size: 1rem;
             font-weight: 900;
         }
-        
+
         .item__icon {
             height: 28px;
         }
-        
+
         &:last-of-type .item__icon {
             height: 27px;
         }
-        
+
         &:hover .item__text {
             color: var(--accent-color);
         }
