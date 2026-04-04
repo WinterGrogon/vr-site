@@ -2,13 +2,8 @@
     background-color: var(--font-color1);
     color: var(--font-color2);
 
-    h3 {
-        font-size: 2rem;
-    }
-
     p,
     a {
-        font-size: 1rem;
         text-decoration: none;
         color: var(--font-color2);
         font-weight: 900;
@@ -29,7 +24,8 @@
 .footer__shop {
     display: flex;
     flex-direction: column;
-    gap: 40px;
+    /* gap: 40px; */
+    gap: calc(40 / 1440 * 100cqw);
 }
 
 .footer__quest {
@@ -56,7 +52,8 @@
     border-bottom: 1px solid var(--font-color2);
 
     svg {
-        font-size: 70px;
+        /* font-size: 70px; */
+        font-size: max(40px, calc(70 / 1440 * 100cqw));
         margin-left: 50px;
     }
 }
@@ -90,7 +87,7 @@
     .footer__grid {
         grid-template-columns: repeat(3, minmax(0, 1fr));
         grid-template-rows: repeat(4, max-content);
-        grid-template-areas: 
+        grid-template-areas:
             'fquest fdev fshop'
             'htitle htitle htitle'
             'htext . hlink'
@@ -123,7 +120,7 @@
         display: flex;
         justify-content: center;
         align-items: center;
-        
+
         width: 100%;
         height: 100%;
 
@@ -136,9 +133,9 @@
         grid-template-columns: 1fr;
         grid-template-rows: repeat(5, max-content);
         justify-items: center;
-        grid-template-areas: 
-            'fquest' 
-            'fdev' 
+        grid-template-areas:
+            'fquest'
+            'fdev'
             'fshop'
             'fhelp'
             'fsoc';
@@ -155,14 +152,15 @@
     .footer__help {
         grid-area: fhelp;
 
-        h3, p {
+        h3,
+        p {
             width: auto;
         }
     }
 
     .footer__help a {
         display: inline-block;
-        
+
         width: auto;
         height: auto;
 
@@ -171,5 +169,19 @@
 
     .footer__social .icons a:first-of-type svg {
         margin-left: 0;
+    }
+}
+
+@media screen and (min-width: 768px) {
+    .footer {
+
+        h3 {
+            font-size: 2rem;
+        }
+
+        p,
+        a {
+            font-size: 1rem;
+        }
     }
 }
