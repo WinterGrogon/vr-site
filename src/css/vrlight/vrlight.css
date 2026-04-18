@@ -1,0 +1,128 @@
+.vrlight-body__grid {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    /* grid-template-rows: repeat(5, 619px); */
+    grid-auto-rows: 1fr;
+    gap: 1.4cqw;
+    grid-template-areas:
+        'vrl-t vrl-t'
+        'vrl-h vrl-h'
+        'vrl-i vrl-i'
+        'vrl-tech .'
+        'vrl-tech vrl-b'
+    ;
+
+    width: 100%;
+
+    h3 {
+        margin-bottom: 1.75cqw;
+    }
+
+    img {
+        flex: 0 0 auto;
+        width: 50%;
+        object-fit: contain;
+    }
+
+    ul {
+        list-style-type: none;
+        padding: 0;
+    }
+}
+
+.vrlight-body__title {
+    grid-area: vrl-t;
+
+    display: flex;
+    justify-content: space-between;
+    text-align: right;
+
+    h1 {
+        width: 20%;
+        padding-bottom: 2.5cqw;
+        border-bottom: 1px solid var(--font-color1);
+
+        align-self: center;
+    }
+}
+
+.vrlight-body__hardware {
+    grid-area: vrl-h;
+
+    display: flex;
+    justify-content: space-between;
+    text-align: right;
+
+    div {
+        align-self: center;
+    }
+}
+
+.vrlight-body__input {
+    grid-area: vrl-i;
+
+    display: flex;
+    justify-content: space-between;
+    text-align: right;
+
+    div {
+        align-self: center;
+    }
+}
+
+.vrlight-body__technical {
+    grid-area: vrl-tech;
+
+    background-color: var(--font-color1);
+    padding: 2.5cqw 1.75cqw;
+    color: var(--font-color2);
+}
+
+.vrlight-body__buy {
+    grid-area: vrl-b;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: flex-end;
+
+    padding: 2.5cqw 1.75cqw;
+
+    background: radial-gradient(100% 162.88% at 0% 0%, #3479FF 0%, #B462F4 100%);
+    color: var(--font-color2);
+
+    text-align: right;
+
+    a {
+        padding: 1.75cqw 6cqw;
+    }
+}
+
+@media screen and (max-width: 768px) {
+    .vrlight-body__grid {
+        display: flex;
+        flex-direction: column;
+    }
+    
+    .vrlight-body__item {
+        display: flex;
+        flex-direction: column;
+
+        img {
+            width: 100%;
+        }
+
+        h1 {
+            width: 100%;
+        }
+
+        &>* {
+            text-align: center;
+        }
+    }
+
+    .vrlight-body__buy {
+        align-items: center;
+        text-align: center;
+    }
+}
